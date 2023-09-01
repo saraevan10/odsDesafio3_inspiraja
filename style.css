@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    max-width: auto;
+    margin: auto;
+    line-height: 1.2rem;
+    text-align: start;
+    background: rgba(100, 149, 237, 0.2);
+}
+header {
+    background-color: #01AAEA;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 96px;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+}
+#imagem_fundo {
+    background: url("imagem-fundo.jpg");
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+li {
+    float: left;
+    padding: 20 10 20 10;
+}
+a:hover {
+    background-color: #01AAEA;
+}
+a {
+    text-decoration: none;
+}
+#titulo {
+    color: black;
+    padding-top: 20%;
+    font-size: 70px;
+    line-height: 0.6;
+    font-family: 'Anton', sans-serif;
+    
+} 
+section {
+    padding: 10px 5px 30px;
+    text-align: center;  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2em;
+}
+.destaque {
+    background-color: #f7f7f7;
+}
+.imagem {
+    width: 90%;
+    height: 30%;
+}
+
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois {
+    width: 40%;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+footer {
+    background-color: #01AAEA;
+    width: 100%;
+    height: 30%;
+    color: white;
+    text-align: center; 
+}
+@media all and (max-width: 768px) {
+   #menu {
+       visibility: hidden;
+   } 
+   .coluna, .dois {
+        display: block;   
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+   }
+   #logodiv {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 0px;
+}
+#logo {
+    margin-left: 0px;
+    transform: translateX(-50%);
+}
+}
